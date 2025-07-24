@@ -1,0 +1,148 @@
+*{
+
+}
+.supermain{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    background-color: gray;
+    width: 30vw;
+    margin: 50px 200px;
+    padding: 20px;
+    border: 5px solid ;
+    justify-content: center;
+}
+.head{
+    text-align: center;
+    font-size: 75px;
+}
+.game {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+.button1 {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 10px;
+    background: url('rock.jpg');
+    background-size: cover; 
+    background-position: center;    border-radius: 50px;
+}
+.button2 {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 10px;
+    background: url('paper.jpg');
+    background-size: cover; 
+    background-position: center;    border-radius: 50px;
+}
+.button3 {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 10px;
+    background: url('scissors.jpg');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50px;
+}
+.button:hover {
+    background-color: rgb(145, 194, 197);
+}
+.choice{
+    display: inline;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.yourChoice{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50px;
+    border-radius: 50px;
+        position: relative;
+             left: 12px;    
+}
+.computerChoice{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50px;
+    position: relative;
+       right: -8px;
+}
+.score{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: 3px solid black;
+        border-radius: 50px;
+}
+.win{
+ 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50px;
+}
+.lost{
+  
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50px;
+}
+.tie{
+   
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 25px;
+    padding: 25px;
+        border-radius: 50px;
+}
+.result
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.box{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 50px;
+}
+.resetbutton{
+        display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+.button{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 10px;
+    background: url('reset.jpg');
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50px;
+}
