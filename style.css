@@ -1,148 +1,173 @@
-*{
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-.supermain{
+
+body {
+    background-color: #f5f5f5;
+}
+
+.supermain {
     display: flex;
     justify-content: center;
-}
-.main{
-    background-color: gray;
-    width: 30vw;
-    margin: 50px 200px;
+    align-items: center;
+    flex-direction: column;
     padding: 20px;
-    border: 5px solid ;
-    justify-content: center;
 }
-.head{
+
+.main {
+    background-color: gray;
+    width: 90vw;
+    max-width: 500px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.head {
     text-align: center;
-    font-size: 75px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
 }
+
 .game {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
     border: 3px solid black;
-    border-radius: 50px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.button1, .button2, .button3 {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .button1 {
-    width: 100px;
-    height: 100px;
-    margin: 25px;
-    padding: 10px;
-    background: url('rock.jpg');
-    background-size: cover; 
-    background-position: center;    border-radius: 50px;
+    background-image: url('rock.jpg');
 }
 .button2 {
-    width: 100px;
-    height: 100px;
-    margin: 25px;
-    padding: 10px;
-    background: url('paper.jpg');
-    background-size: cover; 
-    background-position: center;    border-radius: 50px;
+    background-image: url('paper.jpg');
 }
 .button3 {
-    width: 100px;
-    height: 100px;
-    margin: 25px;
-    padding: 10px;
-    background: url('scissors.jpg');
-    background-size: cover; 
-    background-position: center;
+    background-image: url('scissors.jpg');
+}
+
+.choice {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.yourChoice, .computerChoice {
+    background-color: black;
+    color: white;
+    margin: 15px;
+    padding: 15px 25px;
     border-radius: 50px;
+    text-align: center;
+    flex: 1 1 40%;
+    min-width: 120px;
 }
-.button:hover {
-    background-color: rgb(145, 194, 197);
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+    flex-wrap: wrap;
 }
-.choice{
-    display: inline;
+
+.win, .lost, .tie {
+    background-color: black;
+    color: white;
+    margin: 15px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-align: center;
+    flex: 1 1 25%;
+    min-width: 100px;
+}
+
+.result {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
     border: 3px solid black;
-    border-radius: 50px;
+    border-radius: 20px;
 }
-.yourChoice{
-    background-color: rgb(0, 0, 0);
+
+.box {
+    background-color: black;
     color: white;
-    margin: 25px;
-    padding: 25px;
+    margin: 20px;
+    padding: 20px;
     border-radius: 50px;
-    border-radius: 50px;
-        position: relative;
-             left: 12px;    
+    text-align: center;
+    width: 80%;
 }
-.computerChoice{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 50px;
-    position: relative;
-       right: -8px;
-}
-.score{
-    display:flex;
-    justify-content: center;
-    margin-top: 50px;
-    border: 3px solid black;
-        border-radius: 50px;
-}
-.win{
- 
-    background-color: rgb(0, 0, 0);
-    color: white;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 50px;
-}
-.lost{
-  
-    background-color: rgb(0, 0, 0);
-    color: white;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 50px;
-}
-.tie{
-   
-    background-color: rgb(0, 0, 0);
-    color: white;
-    margin: 25px;
-    padding: 25px;
-        border-radius: 50px;
-}
-.result
-{
+
+.resetbutton {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
     border: 3px solid black;
-    border-radius: 50px;
+    border-radius: 20px;
+    padding: 10px;
 }
-.box{
-    background-color: rgb(0, 0, 0);
-    color: white;
-    margin: 25px;
-    padding: 25px;
-    border-radius: 50px;
-}
-.resetbutton{
-        display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    border: 3px solid black;
-    border-radius: 50px;
-}
-.button{
+
+.button {
     width: 100px;
     height: 100px;
-    margin: 25px;
-    padding: 10px;
+    margin: 10px;
     background: url('reset.jpg');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    border-radius: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 🔁 Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .head {
+        font-size: 2rem;
+    }
+
+    .button1, .button2, .button3 {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .yourChoice, .computerChoice, .win, .lost, .tie {
+        flex: 1 1 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .box {
+        font-size: 1rem;
+    }
+
+    .button {
+        width: 80px;
+        height: 80px;
+    }
 }
